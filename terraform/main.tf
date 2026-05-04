@@ -14,3 +14,4 @@ resource "random_string" "suffix" {
 locals {
   cluster_name = "${var.clustername}-${random_string.suffix.result}"
 }
+#trigger
