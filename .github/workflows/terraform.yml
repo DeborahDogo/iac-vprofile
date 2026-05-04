@@ -5,8 +5,8 @@ on:
     branches:
       - stage
     paths:
-      - terraform/**
       - .github/workflows/terraform.yml
+
   pull_request:
     branches:
       - main
@@ -63,4 +63,3 @@ jobs:
       - name: Terraform plan status
         if: steps.plan.outcome == 'failure'
         run: exit 1
-#end
